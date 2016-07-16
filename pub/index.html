@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arabic Keyboard</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet"> 
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Arabic Keyboard</h1>
+                <Screen></Screen>
+                <Keyboard 
+                    :numerals="numerals"
+                    :keys="keys"
+                    :special="special"
+                    :remaining="remaining"
+                    >
+                </Keyboard>
+            </div>
+        </div>
+    </div>
+
+
+    <template id="screen">
+        <div id="screen-component">
+        <textarea placeholder="...Waiting for input" readonly dir="rtl" class="form-control" rows="5" autofocus>{{letters}}</textarea>
+        </div>
+    </template>
+
+
+    <template id="keyboard">
+        <div id="keyboard-component">
+            <tr>
+                <div id="numbers">
+                <span v-for="number in numerals">
+                    <button id="nums" @click="addLetter(number.l)">{{number.l}}</button>
+                </span>
+                </div><br>
+                <div id="keys">
+                <span v-for="letter in keys">
+                    <button  id="key" @click="addLetter(letter.l)">{{letter.l}}</button>
+                </span>
+                </div>
+                <!--
+                <div id="rem">
+                 <span v-for="letter in remaining">
+                    <button id="key" @click="addLetter(letter.k)">{{letter.k}}</button>
+                </span>
+                </div><br>-->
+                <div id="sp">
+                <span v-for="letter in special">
+                    <button id="special" @click="addLetter(letter.k)">{{letter.k}}</button>
+                </span>
+                </div>
+            </tr>    
+        </div>
+    </template>
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+textarea{
+    resize: none;
+}
+.form-control{
+    cursor: text !important;
+    background-color: white !important;
+    font-size: 30px !important;
+    border: 1px solid darkgray !important;
+    box-shadow: 2px 2px 2px gray !important;
+}
+#keyboard-component{
+    margin-top: 15px;
+}
+h1{
+    text-align: center;
+    font-family: 'Lato', sans-serif !important;
+    color: black !important;
+}
+#key{
+    width: 95px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-shadow: 2 2px 2 lightgray;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    border: 1px solid darkgray;
+    box-shadow: 5px 5px 10px gray;
+}
+#rem{   
+    margin-left: 300px;
+}
+#sp{    
+    margin-left: 20%;
+    margin-top: 10px;
+}
+#nums{
+    width: 95px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-shadow: 2 2px 2 lightgray;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    box-shadow: 5px 5px 10px gray;
+}
+#special{
+    width: 600px;
+    height: 50px;
+   
+    margin-top: 5px;
+    text-shadow: 2 2px 2 lightgray;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    box-shadow: 5px 5px 10px gray;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+
+
