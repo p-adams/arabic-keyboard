@@ -10,9 +10,7 @@ const NUMERALS = [
     {l: '١'}, {l: '٢'}, {l: '٣'}, {l: '٤'}, {l: '٥'}, {l: '٦'}, {l: '٧'}, {l: '٨'}, {l: '٩'}, {l: '٠'}
 ]
 
-/*const REMAINING_KEYS = [
-    {k: 'ئ'}, {k: 'ء'}, {k: 'ؤ'}, {k: 'لا'}
-]*/
+
 
 const SPECIAL_KEYS = [
 
@@ -81,7 +79,6 @@ vm = new Vue({
         numerals: NUMERALS,
         keys: KEYS,
         special: SPECIAL_KEYS,
-        //remaining: REMAINING_KEYS
        
     }
 })
